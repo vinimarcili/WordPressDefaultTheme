@@ -10,15 +10,14 @@
  * @since Theme Luapp 1.0
  */
 ?>
-<html>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-	<title><?php wp_title(''); ?></title>
-	<?php wp_head(); ?>
-</head>
-<body>
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+		<?php wp_head(); ?>
+	</head>
+	<body>
 
 	

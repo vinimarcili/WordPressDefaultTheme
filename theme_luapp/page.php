@@ -15,7 +15,7 @@ get_header(); ?>
 
 <div id="main">
 	<?php
-		while ( have_posts() ) : the_post();
+		while (have_posts()) : the_post();
 
 		// Include the page content template.
 		get_template_part( 'template-parts/content', 'none' );
