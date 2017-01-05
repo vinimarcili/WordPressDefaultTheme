@@ -1,3 +1,5 @@
 theme_luapp/node_modules/
 theme_luapp/assets/src/sass/.sass-cache
 theme_luapp/assets/src/sass/.sass-cache/*
+.idea/
+.idea/*
