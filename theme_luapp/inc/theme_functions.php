@@ -6,14 +6,22 @@ show_admin_bar(false);
 
 add_action( 'after_setup_theme', 'register_theme_menu' );
 function register_theme_menu() {
-    // This theme uses wp_nav_menu() in two locations.
-    register_nav_menus( array(
-        'Top'   => __( 'Top primary menu', 'theme_luapp' ),
-        'Footer' => __( 'Footer menu', 'theme_luapp' ),
-    ) );
+    register_nav_menus(array(
+        'Top'   => __('Top primary menu', 'theme_luapp'),
+        'Footer' => __('Footer menu', 'theme_luapp'),
+    ));
 }
 
-if (!function_exists( 'setup' )) {
+if (function_exists('acf_add_options_sub_page')) {
+    if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page();
+    }
+    acf_add_options_sub_page('Tema');
+    acf_add_options_sub_page('Wordpress Options');
+    acf_add_options_sub_page('Settings');
+}
+
+if (!function_exists('setup')) {
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
